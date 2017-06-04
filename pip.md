@@ -15,6 +15,9 @@ Example pip.conf on linux:
         find-links = /home/pierre/wheelhouse
         cache-dir = /home/pierre/wheelhouse/cache
 
+    [list]
+        format=columns
+
     [install]
         user = false
 

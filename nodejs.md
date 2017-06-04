@@ -5,5 +5,7 @@ Very easy to follow instructions for installing nodejs via system package manage
 
 The following commands are what I recently used:
 
-    $ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
-    $ sudo apt-get install -y nodejs
+```bash
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
