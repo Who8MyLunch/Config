@@ -7,7 +7,7 @@ apt-get dist-upgrade
 
 apt-get -y install git-core subversion dkms libtool \
                    autoconf automake pkg-config cmake \
-                   linux-headers-generic build-essential gfortran  \
+                   build-essential gfortran  \
                    libjpeg-dev libpng-dev libtiff-dev libwebp-dev libvorbis-dev libtheora-dev \
                    liblcms2-dev libfreetype6-dev libass-dev texinfo \
                    zlib1g-dev libxslt1-dev libxml2-dev \
