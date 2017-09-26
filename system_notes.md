@@ -26,7 +26,7 @@ Very helpful: http://askubuntu.com/questions/718922/how-to-install-python-3-5-1-
 PPA for Python versions not yet in main distributions: https://launchpad.net/~fkrull/+archive/ubuntu/deadsnakes
 
 ```bash
-sudo apt-get -y install software-properties-common
+sudo apt-get install -y software-properties-common
 sudo add-apt-repository ppa:fkrull/deadsnakes
 sudo apt-get update
 ```
