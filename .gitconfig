@@ -1,0 +1,30 @@
+# See this web page for details.
+# http://git-scm.com/docs/git-config#FILES
+
+[user]
+    name = Pierre V. Villeneuve
+    email = pierre.villeneuve@gmail.com
+
+[core]
+    editor = vim
+    autocrlf = input
+    excludesfile = ~/.gitignore
+
+[push]
+    default = simple
+
+[help]
+    format = html
+
+[color]
+    ui = true
+
+[color "branch"]
+    current = yellow reverse
+    local = yello
+    remote = green
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = red
