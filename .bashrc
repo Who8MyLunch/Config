@@ -137,11 +137,11 @@ complete -o default -F _pip_completion pip
 # pip bash completion end
 
 # Python virtual environments
-export VIRTUALENVWRAPPER_PYTHON=${HOME}/.local/bin/python3.6
-export VIRTUALENVWRAPPER_VIRTUALENV=${HOME}/.local/bin/virtualenv
-export WORKON_HOME=${HOME}/.virtualenvs
-export PROJECT_HOME=${HOME}/Projects
-source ${HOME}/.local/bin/virtualenvwrapper.sh
+# export VIRTUALENVWRAPPER_PYTHON=${HOME}/.local/bin/python3.6
+# export VIRTUALENVWRAPPER_VIRTUALENV=${HOME}/.local/bin/virtualenv
+# export WORKON_HOME=${HOME}/.virtualenvs
+# export PROJECT_HOME=${HOME}/Projects
+# source ${HOME}/.local/bin/virtualenvwrapper.sh
 
 # UTF-8
 # export LC_ALL=en_US.UTF-8
@@ -150,7 +150,7 @@ source ${HOME}/.local/bin/virtualenvwrapper.sh
 
 # path modifications
 export PATH=${HOME}/bin:${HOME}/.local/bin:${PATH}
-export PATH=${HOME}/node_modules/.bin:${PATH}
-export PATH=${HOME}/Projects/ffmpeg-3.3.2-64bit-static:${PATH}
+# export PATH=${HOME}/node_modules/.bin:${PATH}
+# export PATH=${HOME}/Projects/ffmpeg-3.3.2-64bit-static:${PATH}
 
 
