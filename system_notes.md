@@ -16,7 +16,8 @@ sudo apt-get install -y git-core subversion dkms libtool \
                         libjpeg-dev libpng-dev libtiff-dev libwebp-dev libvorbis-dev libtheora-dev \
                         liblcms2-dev libfreetype6-dev libass-dev texinfo \
                         zlib1g-dev libxslt1-dev libxml2-dev \
-                        liblapack-dev libblas-dev libopenblas-dev
+                        liblapack-dev libblas-dev libopenblas-dev \
+                        libboost-all-dev
 ```
 
 # Install Python via Package Manager
