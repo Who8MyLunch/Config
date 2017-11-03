@@ -20,7 +20,7 @@ sudo apt-get install -y git-core subversion dkms libtool \
                         libboost-all-dev
 ```
 
-# Install Python via Package Manager
+# Option 1 - Install Python via Package Manager
 
 Very helpful: http://askubuntu.com/questions/718922/how-to-install-python-3-5-1-on-wily-werewolf-15-10
 
@@ -45,7 +45,7 @@ sudo apt-get install python3.6 python3.6-dev
 ```
 
 
-# Install Python by Compiling from Source
+# Option 2 - Install Python by Compiling from Source
 
 ### Links
 - https://docs.python.org/devguide/setup.html
@@ -57,7 +57,7 @@ sudo apt-get install python3.6 python3.6-dev
 PPA for Python versions not yet in main distributions: https://launchpad.net/~fkrull/+archive/ubuntu/deadsnakes
 
 ```bash
-sudo add-apt-repository ppa:fkrull/deadsnakes
+sudo add-apt-repository ppa:fkrull/deadsnakes  # check script setup_01.sh for more recent command(s)
 sudo apt-get update
 sudo apt-get build-dep python3.6
 ```
