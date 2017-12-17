@@ -54,7 +54,7 @@ sudo apt-get install python3.6 python3.6-dev
 - http://stackoverflow.com/questions/8097161/how-would-i-build-python-myself-from-source-code-on-ubuntu
 - https://askubuntu.com/questions/324845/whats-the-difference-between-apt-get-install-and-apt-get-build-dep
 
-PPA for Python versions not yet in main distributions: https://launchpad.net/~fkrull/+archive/ubuntu/deadsnakes
+PPA for Python versions not yet in main distributions: https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa
 
 ```bash
 sudo add-apt-repository ppa:fkrull/deadsnakes  # check script setup_01.sh for more recent command(s)

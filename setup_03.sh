@@ -6,7 +6,7 @@
 # Unpack the contents into a folder of your choosing.
 
 cd ~/Projects
-wget https://www.python.org/ftp/python/3.6.3/Python
+wget https://www.python.org/ftp/python/3.6.3/Python-3.6.3.tar.xz
 
 # Uncompress
 tar xvf Python-3.6.3.tar.xz

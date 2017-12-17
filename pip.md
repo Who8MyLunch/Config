@@ -4,6 +4,7 @@
 Edit user-level pip config files: http://pip.readthedocs.org/en/latest/user_guide.html#configuration
 
 linux:   $HOME/.config/pip/pip.conf
+
 windows: %APPDATA%\pip\pip.ini
 
 

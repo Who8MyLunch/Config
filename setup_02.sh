@@ -11,15 +11,18 @@
 # Option 2 - Get ready to install latest Python from source, then see script setup_03.sh for next steps
 apt-get install -y software-properties-common
 
-https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa
+# https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa
 add-apt-repository ppa:deadsnakes/ppa
-add-apt-repository ppa:deadsnakes/ppa
+
+# Account for possible name differenes between debian and ubuntu
+# https://askubuntu.com/questions/445487/what-debian-version-are-the-different-ubuntu-versions-based-on
+
+# Allow source in /etc/apt/sources.list
 
 apt-get update
 
 
 apt-get build-dep python3.6
-
 
 # https://askubuntu.com/questions/761357/how-to-automatically-update-etc-apt-sources-list-with-source-uris-on-ubuntu-16
 
