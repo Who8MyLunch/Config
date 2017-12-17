@@ -137,20 +137,31 @@ complete -o default -F _pip_completion pip
 # pip bash completion end
 
 # Python virtual environments
-# export VIRTUALENVWRAPPER_PYTHON=${HOME}/.local/bin/python3.6
-# export VIRTUALENVWRAPPER_VIRTUALENV=${HOME}/.local/bin/virtualenv
-# export WORKON_HOME=${HOME}/.virtualenvs
-# export PROJECT_HOME=${HOME}/Projects
-# source ${HOME}/.local/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_PYTHON=${HOME}/.local/bin/python3.6
+export VIRTUALENVWRAPPER_VIRTUALENV=${HOME}/.local/bin/virtualenv
+export WORKON_HOME=${HOME}/.virtualenvs
+export PROJECT_HOME=${HOME}/Projects
+source ${HOME}/.local/bin/virtualenvwrapper.sh
 
 # UTF-8
 # export LC_ALL=en_US.UTF-8
 # export LANG=en_US.UTF-8
 # export LANGUAGE=en_US.UTF-8
 
-# path modifications
-export PATH=${HOME}/bin:${HOME}/.local/bin:${PATH}
-# export PATH=${HOME}/node_modules/.bin:${PATH}
+# General path modifications
+export PATH=${PATH}:${HOME}/node_modules/.bin
 # export PATH=${HOME}/Projects/ffmpeg-3.3.2-64bit-static:${PATH}
 
+
+# .local stuff
+# https://stackoverflow.com/questions/4250624/ld-library-path-vs-library-path
+dev_base=${HOME}/.local
+export PATH=${PATH}:${dev_base}/bin
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${dev_base}/lib
+export LIBRARY_PATH=${LIBRARY_PATH}:${dev_base}/lib
+export C_INCLUDE_PATH=${C_INCLUDE_PATH}:${dev_base}/include
+export CPLUS_INCLUDE_PATH=${CPLUS_INCLUDE_PATH}:${dev_base}/include
+
+# https://askubuntu.com/questions/210210/pkg-config-path-environment-variable
+export PKG_CONFIG_PATH=${dev_base}/lib/pkgconfig
 
