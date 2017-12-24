@@ -24,7 +24,7 @@ sudo apt-get install dirmngr
 # deb-src http://ppa.launchpad.net/deadsnakes/ppa/ubuntu xenial main
 
 # Next run these lines to add key
-key=F23C5A6CF475977595C89F51BA6932366A755776
+key=asdasdasd
 
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ${key}
 
