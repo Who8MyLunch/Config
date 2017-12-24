@@ -1,28 +1,34 @@
 #!/bin/bash
 
 # Semi-automated setup script.  Run this with sudo.
+# Get ready to install latest Python from source, then see script setup_03.sh for next steps
 
-# Option 1 - Install Python via Package Manager
-# Very helpful: http://askubuntu.com/questions/718922/how-to-install-python-3-5-1-on-wily-werewolf-15-10
-# PPA for Python versions not yet in main distributions: https://launchpad.net/~fkrull/+archive/ubuntu/deadsnakes
 
-# https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa
+# Check for Python version available in cureent cache.
+# Use this to see if your favorite (Python 3.6) is available in default PPAs:
+# apt-cache search python3\.6
+# if not then deadsnakes is needed to provide earlier access to newer versions.
 
-# Option 2 - Get ready to install latest Python from source, then see script setup_03.sh for next steps
-apt-get install -y software-properties-common
+# Very helpful!!!!!
+# https://askubuntu.com/questions/38021/how-to-add-a-ppa-on-a-server
 
-# https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa
-add-apt-repository ppa:deadsnakes/ppa
+# required for adding gpg key
+sudo apt-get install dirmngr
 
-# Account for possible name differenes between debian and ubuntu
+# Make sure to update /etc/apt/sources.list to enable source files
+# Account for possible name differenes between debian and ubuntu??
 # https://askubuntu.com/questions/445487/what-debian-version-are-the-different-ubuntu-versions-based-on
 
-# Allow source in /etc/apt/sources.list
+# Add following lines to /etc/apt/sources.list
+# deb http://ppa.launchpad.net/deadsnakes/ppa/ubuntu xenial main
+# deb-src http://ppa.launchpad.net/deadsnakes/ppa/ubuntu xenial main
 
-apt-get update
+# Next run these lines to add key
+key=F23C5A6CF475977595C89F51BA6932366A755776
 
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ${key}
 
-apt-get build-dep python3.6
+# Update and install Python 3.6 build dependenacies
+sudo apt-get update
 
-# https://askubuntu.com/questions/761357/how-to-automatically-update-etc-apt-sources-list-with-source-uris-on-ubuntu-16
-
+sudo apt-get build-dep python3.6
