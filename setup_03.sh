@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Semi-automated setup script.  Run this with sudo.
+# Semi-automated setup script.
+# Run this normally, e.g. not sudo
 
 # Then go to this site (https://www.python.org/downloads) and download the source for Python.
 # Unpack the contents into a folder of your choosing.
@@ -22,8 +23,8 @@ cd Python-${ver}
 make clean
 ./configure --enable-optimizations --with-lto --prefix=$HOME/.local
 make
-make test
-make install
+# make test
+# make install
 
 # Note the option `--enable-optimizations` will significantly lengthen compile time.
 

@@ -10,20 +10,20 @@ windows: %APPDATA%\pip\pip.ini
 
 Example pip.conf on linux:
 
-    [global]
-        timeout = 60
-        wheel-dir = /home/pierre/wheelhouse
-        find-links = /home/pierre/wheelhouse
-        cache-dir = /home/pierre/wheelhouse/cache
+        [global]
+            timeout = 60
+            wheel-dir = /home/pierre/wheelhouse
+            find-links = /home/pierre/wheelhouse
+            cache-dir = /home/pierre/wheelhouse/cache
 
-    [list]
-        format=columns
+        [list]
+            format=columns
 
-    [install]
-        user = false
+        [install]
+            user = false
 
-    [freeze]
-        timeout = 10
+        [freeze]
+            timeout = 10
 
 
 # Build wheels from source
