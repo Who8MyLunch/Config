@@ -3,7 +3,7 @@
 # Semi-automated setup script.  Run this with sudo.
 
 apt-get update
-apt-get dist-upgrade
+apt-get -y dist-upgrade
 
 apt-get -y install git-core subversion dkms libtool \
                    autoconf automake pkg-config cmake \
