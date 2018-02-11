@@ -21,8 +21,8 @@ tar xvf Python-${ver}.tar.xz
 cd Python-${ver}
 
 # make clean
-# ./configure --enable-optimizations --with-lto --prefix=$HOME/.local
-# make
+./configure --enable-optimizations --with-lto --prefix=$HOME/.local
+make
 
 # make test
 # make install

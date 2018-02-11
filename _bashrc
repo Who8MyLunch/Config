@@ -166,3 +166,5 @@ export CPLUS_INCLUDE_PATH=${CPLUS_INCLUDE_PATH}:${dev_base}/include
 # https://askubuntu.com/questions/210210/pkg-config-path-environment-variable
 export PKG_CONFIG_PATH=${dev_base}/lib/pkgconfig
 
+
+# keychain /home/pierre/.ssh/id_ras
