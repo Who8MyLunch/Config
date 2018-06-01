@@ -1,0 +1,13 @@
+# Alias definitions.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+alias ls='ls -AFh  --show-control-chars --color=auto --group-directories-first'
+alias la='ls -a    --show-control-chars --color=auto --group-directories-first'
+alias ll='ls -AFhl --show-control-chars --color=auto --group-directories-first'
+
+alias grep='grep --color=auto'
+
+alias df='df -h'
+
+alias headless='google-chrome --app=http://localhost:8888'
+
