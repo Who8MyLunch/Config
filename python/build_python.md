@@ -3,15 +3,15 @@
 # Update System
 
     sudo apt-get update
-    sudo apt-get dist-upgrade
+    sudo apt-get -y dist-upgrade
 
-    sudo apt-get install git-core subversion dkms libtool \
-                         autoconf automake pkg-config cmake \
-                         build-essential gfortran  \
-                         libjpeg-dev libpng-dev libtiff-dev libwebp-dev libvorbis-dev libtheora-dev \
-                         liblcms2-dev libfreetype6-dev libass-dev texinfo \
-                         zlib1g-dev libxslt1-dev libxml2-dev \
-                         liblapack-dev libblas-dev libopenblas-dev
+    sudo apt-get -y install git-core subversion dkms libtool \
+                            autoconf automake pkg-config cmake \
+                            build-essential gfortran  \
+                            libjpeg-dev libpng-dev libtiff-dev libwebp-dev libvorbis-dev libtheora-dev \
+                            liblcms2-dev libfreetype6-dev libass-dev texinfo \
+                            zlib1g-dev libxslt1-dev libxml2-dev \
+                            liblapack-dev libblas-dev libopenblas-dev
 
 
 # Get Ready to Compile

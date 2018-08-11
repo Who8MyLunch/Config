@@ -5,7 +5,8 @@ https://virtualenvwrapper.readthedocs.org/en/latest/command_ref.html
 
 Install virtualenvwrapper (https://virtualenvwrapper.readthedocs.io/en/latest/install.html) to user space or to user's own custom compiled Python environment.
 
-    pip install --user virtualenvwrapper
+    pip3.7 install --user -U pip setuptools
+    pip3.7 install --user virtualenvwrapper
 
 Then follow the instructions included at the top of the shell script `~/.local/bin/virtualenvwrapper.sh`.  For me this involved the following steps:
 
@@ -13,8 +14,9 @@ Then follow the instructions included at the top of the shell script `~/.local/b
 
 Add the following lines to my .bashrc:
 
-    export VIRTUALENVWRAPPER_PYTHON=${HOME}/.local/bin/python3.6
     export WORKON_HOME=${HOME}/.virtualenvs
+    export VIRTUALENVWRAPPER_PYTHON=${HOME}/.local/bin/python3.7
+    export VIRTUALENVWRAPPER_VIRTUALENV=${HOME}/.local/bin/virtualenv
     export PROJECT_HOME=${HOME}/Projects
     source ${HOME}/.local/bin/virtualenvwrapper.sh
 
@@ -31,8 +33,7 @@ You should see an empty list of available virtualenvironments.  See the docs for
 
 # Make a new env associated with a project
 
-    mkvirtualenv -a ~/Projects/ipynb_widget_canvas canvas
+    mkvirtualenv -a ~/Projects/ipynb_widget_canvas canvas_env
 
 
 May need to fiddle around to allow new virtualenvs to inherit from user or system Python
-
