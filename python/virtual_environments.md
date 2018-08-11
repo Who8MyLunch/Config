@@ -19,6 +19,7 @@ Add the following lines to my .bashrc:
     source ${HOME}/.local/bin/virtualenvwrapper.sh
 
 Run
+
     source ~/.bashrc
 
 and you should be all set.  Test it out by running

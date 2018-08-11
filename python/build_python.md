@@ -73,7 +73,6 @@ number to desired number.
     cd Python-${ver}
 
 
-
 # Compile
 
 Use the `prefix` option below to specify building and installing to the user's environment.
