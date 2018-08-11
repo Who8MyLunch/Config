@@ -1,3 +1,5 @@
+# Copy this file to /etc/apt/, make sure not clobbering anything important...
+
 # Account for possible name differenes between debian and ubuntu??
 # https://askubuntu.com/questions/445487/what-debian-version-are-the-different-ubuntu-versions-based-on
 
