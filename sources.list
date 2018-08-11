@@ -1,7 +1,11 @@
+# Account for possible name differenes between debian and ubuntu??
+# https://askubuntu.com/questions/445487/what-debian-version-are-the-different-ubuntu-versions-based-on
+
+
 deb http://mirrordirector.raspbian.org/raspbian/ stretch main contrib non-free rpi
 deb-src http://archive.raspbian.org/raspbian/ stretch main contrib non-free rpi
 
-# Should I uncomment the line below?
+# Should I uncomment the line below??
 #deb http://archive.raspberrypi.org/debian/ stretch main ui
 deb-src http://archive.raspberrypi.org/debian/ stretch main ui
 
@@ -10,4 +14,5 @@ deb http://ppa.launchpad.net/deadsnakes/ppa/ubuntu xenial main
 deb-src http://ppa.launchpad.net/deadsnakes/ppa/ubuntu xenial main
 
 # adafruit repo not yet updated for stretch
+# adafruit PPA caused lots of problems last year...
 # deb http://apt.adafruit.com/raspbian/ stretch main

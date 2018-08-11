@@ -5,8 +5,8 @@
 
 
 # Check for Python version available in cureent cache.
-# Use this to see if your favorite (Python 3.6) is available in default PPAs:
-# apt-cache search python3\.6
+# Use this to see if your favorite Python is available in default PPAs:
+# apt-cache search python3.7
 # if not then deadsnakes is needed to provide earlier access to newer versions.
 
 # Very helpful!!!!!
@@ -29,7 +29,7 @@ key=F23C5A6CF475977595C89F51BA6932366A755776
 
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ${key}
 
-# Update and install Python 3.6 build dependenacies
+# Update and install Python 3.7 build dependenacies
 sudo apt-get update
 
-sudo apt-get build-dep python3.6
+sudo apt-get build-dep python3.7
