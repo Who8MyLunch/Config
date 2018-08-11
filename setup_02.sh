@@ -13,7 +13,7 @@
 # https://askubuntu.com/questions/38021/how-to-add-a-ppa-on-a-server
 
 # required for adding gpg key
-sudo apt-get install dirmngr
+# sudo apt-get install dirmngr   # this should be included in setup_01.sh
 
 # Make sure to update /etc/apt/sources.list to enable source files
 # Account for possible name differenes between debian and ubuntu??
