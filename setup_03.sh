@@ -6,7 +6,14 @@
 # Then go to this site (https://www.python.org/downloads) and download the source for Python.
 # Unpack the contents into a folder of your choosing.
 
-ver=3.6.4
+if [ ! -d "$HOME/.local" ]; then
+    mkdir "$HOME/.local"
+fi
+if [ ! -d "$HOME/Projects" ]; then
+    mkdir "$HOME/Projects"
+fi
+
+ver=3.7.0
 
 cd ~/Projects
 wget https://www.python.org/ftp/python/${ver}/Python-${ver}.tar.xz
