@@ -25,11 +25,11 @@
 
 # Next run these lines to add key
 # https://superuser.com/questions/620765/sudo-apt-key-adv-keyserver-keyserver-ubuntu-com-recv-7f0ceb10-command-return
-key=F23C5A6CF475977595C89F51BA6932366A755776
+# key=F23C5A6CF475977595C89F51BA6932366A755776
 
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ${key}
+# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ${key}
 
-# Update and install Python 3.7 build dependenacies
-sudo apt-get update
+# # Update and install Python 3.7 build dependenacies
+# sudo apt-get update
 
-sudo apt-get build-dep python3.7
+# sudo apt-get build-dep python3.7

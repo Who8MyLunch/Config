@@ -1,5 +1,19 @@
 
 
+# Update System
+
+    sudo apt-get update
+    sudo apt-get dist-upgrade
+
+    sudo apt-get install git-core subversion dkms libtool \
+                         autoconf automake pkg-config cmake \
+                         build-essential gfortran  \
+                         libjpeg-dev libpng-dev libtiff-dev libwebp-dev libvorbis-dev libtheora-dev \
+                         liblcms2-dev libfreetype6-dev libass-dev texinfo \
+                         zlib1g-dev libxslt1-dev libxml2-dev \
+                         liblapack-dev libblas-dev libopenblas-dev
+
+
 # Get Ready to Compile
 
 Check for Python version available in current apt cache. Often the latest Python version is not
@@ -17,6 +31,7 @@ First step is to make sure `dirmngr` is installed (required for adding gpg key)
 Next update `/etc/apt/sources.list` to enable source files.  Maybe need to worry about possible
 name differences between debian and ubuntu: https://askubuntu.com/questions/445487/what-debian-version-are-the-different-ubuntu-versions-based-on
 
+
 ## Deadsnakes PPA
 
 Add following lines to /etc/apt/sources.list:
@@ -31,12 +46,14 @@ Helpful stuff: https://superuser.com/questions/620765/sudo-apt-key-adv-keyserver
 
     sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ${key}
 
+
 ## Build Dependencies
 
 Update and install Python build dependenacies:
 
     sudo apt-get update
     sudo apt-get build-dep python3.7    # use version to match your scenario
+
 
 
 # Download Source
