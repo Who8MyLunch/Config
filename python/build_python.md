@@ -5,13 +5,57 @@
     sudo apt-get update
     sudo apt-get -y dist-upgrade
 
-    sudo apt-get -y install git-core subversion dkms libtool \
-                            autoconf automake pkg-config cmake \
-                            build-essential gfortran  \
-                            libjpeg-dev libpng-dev libtiff-dev libwebp-dev libvorbis-dev libtheora-dev \
-                            liblcms2-dev libfreetype6-dev libass-dev texinfo \
-                            zlib1g-dev libxslt1-dev libxml2-dev \
-                            liblapack-dev libblas-dev libopenblas-dev
+    sudo apt-get -y install git-core  \
+                            subversion \
+                            dkms \
+                            libtool \
+                            autoconf \
+                            automake \
+                            cmake \
+                            pkg-config \
+                            liblcms2-dev \
+                            texinfo \
+                            libtbb2 \
+                            libtbb-dev \
+                            build-essential \
+                            gfortran  \
+                            libfreetype6-dev \
+                            libass-dev \
+                            zlib1g-dev \
+                            libxslt1-dev \
+                            libxml2-dev \
+                            liblapack-dev \
+                            libblas-dev \
+                            libopenblas-dev
+
+# Image file I/O
+
+    sudo apt-get -y install libjpeg-dev \
+                            libpng12-dev \
+                            libtiff5-dev \
+                            libwebp-dev \
+                            libvorbis-dev \
+                            libtheora-dev \
+                            libjasper-dev
+
+# Video file I/O
+
+    sudo apt-get -y install libopencv-dev
+
+???                            libavcodec-dev \
+                            libavformat-dev \
+                            libswscale-dev \
+                            libv4l-dev \
+                            libxvidcore-dev \
+                            libx264-dev
+
+
+# Open CV stuff
+
+Install from source tutorial: :https://docs.opencv.org/3.4.1/d7/d9f/tutorial_linux_install.html
+
+    sudo apt-get -y install gtk2-devel
+
 
 
 # Get Ready to Compile
