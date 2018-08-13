@@ -43,10 +43,10 @@ cmake -D CMAKE_BUILD_TYPE = RELEASE \
       -D BUILD_PERF_TESTS = OFF \
       -D INSTALL_PYTHON_EXAMPLES = OFF \
       -D BUILD_OPENCV_APPS = OFF \
-      -D PYTHON3_EXECUTABLE = "$prefix/bin/python3.7m" \
+      -D PYTHON_EXECUTABLE = "$prefix/bin/python3.7m" \
       -D PYTHON_INCLUDE_DIR = "$prefix/include/python3.7m" \
       -D PYTHON_LIBRARY = "$prefix/lib/libpython3.7m.a" \
-      -D PYTHON3_NUMPY_INCLUDE_DIRS = "$HOME/.virtualenvs/wand/lib/python3.7/site-packages/numpy/core/include" \
+      -D PYTHON_NUMPY_INCLUDE_DIRS = "$HOME/.virtualenvs/wand/lib/python3.7/site-packages/numpy/core/include" \
       $path_source
 
       # -D PYTHON_INCLUDE_DIR2 = /usr/include/x86_64-linux-gnu/python<version> \
