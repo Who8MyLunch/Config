@@ -1,12 +1,14 @@
 #!/bin/bash
 
 # Setup
-path_source="$HOME/Project/opencv"
-path_extra="$HOME/Project/opencv_contrib"
+path_source="$HOME/Projects/opencv"
+path_extra="$HOME/Projects/opencv_contrib"
 
 path_build="$path_source/build"
 
 prefix="$HOME/.local"
+
+echo $path_build
 
 if [ ! -d $path_build ]; then
   mkdir $path_build
