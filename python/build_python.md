@@ -25,9 +25,22 @@
                             zlib1g-dev \
                             libxslt1-dev \
                             libxml2-dev \
+                            libfftw3-dev \
                             liblapack-dev \
                             libblas-dev \
                             libopenblas-dev
+
+
+# Gstreamer
+    sudo apt-get -y install libgstreamer1.0-0 \
+                            gstreamer1.0-plugins-base \
+                            gstreamer1.0-plugins-good \
+                            gstreamer1.0-plugins-bad \
+                            gstreamer1.0-plugins-ugly \
+                            gstreamer1.0-libav \
+                            gstreamer1.0-doc \
+                            gstreamer1.0-tools
+
 
 # Image file I/O
 
@@ -53,9 +66,10 @@
 
 # Open CV stuff
 
+
 Install from source tutorial: :https://docs.opencv.org/3.4.1/d7/d9f/tutorial_linux_install.html
 
-    sudo apt-get -y install gtk2-devel
+    sudo apt-get -y install gtk2-dev
 
 
 

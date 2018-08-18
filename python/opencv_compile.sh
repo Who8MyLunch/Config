@@ -1,5 +1,13 @@
 #!/bin/bash
 
+
+
+# Install from source tutorial: :https://docs.opencv.org/3.4.1/d7/d9f/tutorial_linux_install.html
+
+#     sudo apt-get -y install gtk2-dev
+
+
+
 # Setup
 path_source="$HOME/Projects/opencv"
 path_extra="$HOME/Projects/opencv_contrib"
