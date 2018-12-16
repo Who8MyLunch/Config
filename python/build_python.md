@@ -30,8 +30,8 @@
                             libblas-dev \
                             libopenblas-dev
 
-
 # Gstreamer
+
     sudo apt-get -y install libgstreamer1.0-0 \
                             gstreamer1.0-plugins-base \
                             gstreamer1.0-plugins-good \
@@ -40,7 +40,6 @@
                             gstreamer1.0-libav \
                             gstreamer1.0-doc \
                             gstreamer1.0-tools
-
 
 # Image file I/O
 
@@ -54,9 +53,8 @@
 
 # Video file I/O
 
-    sudo apt-get -y install libopencv-dev
-
-???                            libavcodec-dev \
+    sudo apt-get -y install libopencv-dev \
+                            libavcodec-dev \
                             libavformat-dev \
                             libswscale-dev \
                             libv4l-dev \

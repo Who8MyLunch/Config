@@ -33,7 +33,7 @@ You should see an empty list of available virtualenvironments.  See the docs for
 
 # Make a new env associated with a project
 
-    mkvirtualenv -a ~/Projects/ipynb_widget_canvas canvas_env
+    mkvirtualenv --system-site-packages -a ~/Projects/ipynb_widget_canvas canvas_env
 
 
 May need to fiddle around to allow new virtualenvs to inherit from user or system Python

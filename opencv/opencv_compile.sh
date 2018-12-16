@@ -26,35 +26,34 @@ cd $path_build
 
 
 # Do it
-      # -D WITH_TBB = ON \
-      # -D WITH_QT = ON \
 
-cmake -D CMAKE_BUILD_TYPE=RELEASE \
-      -D CMAKE_INSTALL_PREFIX=$prefix \
-      -D OPENCV_EXTRA_MODULES_PATH="$path_extra/modules" \
-      -D WITH_V4L=OFF \
-      -D WITH_LIBV4L=OFF \
-      -D WITH_OPENGL=OFF \
-      -D WITH_FFMPEG=OFF \
-      -D ENABLE_NEON=OFF \
-      -D ENABLE_VFPV3=OFF \
-      -D WITH_TBB=OFF \
-      -D WITH_OPENMP=OFF \
-      -D WITH_IPP=OFF \
-      -D WITH_NVCUVID=OFF \
-      -D WITH_CUDA=OFF \
-      -D WITH_OPENCL=OFF \
-      -D WITH_CSTRIPES=OFF \
-      -D BUILD_DOCS=OFF \
-      -D BUILD_EXAMPLES=OFF \
-      -D BUILD_TESTS=OFF \
-      -D BUILD_PERF_TESTS=OFF \
-      -D INSTALL_PYTHON_EXAMPLES=OFF \
-      -D BUILD_OPENCV_APPS=OFF \
-      -D PYTHON_EXECUTABLE="$prefix/bin/python3.7m" \
-      -D PYTHON_INCLUDE_DIR="$prefix/include/python3.7m" \
-      -D PYTHON_LIBRARY="$prefix/lib/libpython3.7m.a" \
-      -D PYTHON_NUMPY_INCLUDE_DIRS="$HOME/.virtualenvs/wand/lib/python3.7/site-packages/numpy/core/include" \
+cmake -DCMAKE_BUILD_TYPE=RELEASE \
+      -DCMAKE_INSTALL_PREFIX=$prefix \
+      -DOPENCV_EXTRA_MODULES_PATH="$path_extra/modules" \
+      -DWITH_V4L=on \
+      -DWITH_LIBV4L=on \
+      -DWITH_OPENGL=off \
+      -DWITH_FFMPEG=off \
+      -DENABLE_NEON=on \
+      -DENABLE_VFPV3=on \
+      -DWITH_TBB=off \
+      -DWITH_OPENMP=off \
+      -DWITH_IPP=off \
+      -DWITH_NVCUVID=off \
+      -DWITH_CUDA=off \
+      -DWITH_OPENCL=off \
+      -DWITH_CSTRIPES=off \
+      -DWITH_QT=off \
+      -DBUILD_DOCS=off \
+      -DBUILD_EXAMPLES=off \
+      -DBUILD_TESTS=off \
+      -DBUILD_PERF_TESTS=off \
+      -DINSTALL_PYTHON_EXAMPLES=off \
+      -DBUILD_OPENCV_APPS=off \
+      -DPYTHON_EXECUTABLE="$prefix/bin/python3.7m" \
+      -DPYTHON_INCLUDE_DIR="$prefix/include/python3.7m" \
+      -DPYTHON_LIBRARY="$prefix/lib/libpython3.7m.a" \
+      -DPYTHON_NUMPY_INCLUDE_DIRS="$HOME/.virtualenvs/wand/lib/python3.7/site-packages/numpy/core/include" \
       $path_source
 
       # -D PYTHON_INCLUDE_DIR2 = /usr/include/x86_64-linux-gnu/python<version> \
