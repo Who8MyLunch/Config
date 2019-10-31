@@ -100,17 +100,6 @@ if [ -x /usr/bin/mint-fortune ]; then
      /usr/bin/mint-fortune
 fi
 
-# https://pip.pypa.io/en/latest/user_guide.html#command-completion
-# pip bash completion start
-_pip_completion()
-{
-    COMPREPLY=( $( COMP_WORDS="${COMP_WORDS[*]}" \
-                   COMP_CWORD=${COMP_CWORD} \
-                   PIP_AUTO_COMPLETE=1 $1 ) )
-}
-complete -o default -F _pip_completion pip
-# pip bash completion end
-
 # Python virtual environments
 export VIRTUALENVWRAPPER_PYTHON=${HOME}/.local/bin/python3.7
 export VIRTUALENVWRAPPER_VIRTUALENV=${HOME}/.local/bin/virtualenv
@@ -125,7 +114,6 @@ source ${HOME}/.local/bin/virtualenvwrapper.sh
 
 # General path modifications
 export PATH=${PATH}:${HOME}/node_modules/.bin
-# export PATH=${HOME}/Projects/ffmpeg-3.3.2-64bit-static:${PATH}
 
 
 # .local stuff
