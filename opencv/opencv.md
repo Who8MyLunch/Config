@@ -35,7 +35,7 @@ And then at one point I also needed to install most of the following packages
 ### Image file I/O
 
     sudo apt-get -y install libjpeg-dev \
-                            libpng12-dev \
+                            libpng-dev \
                             libtiff5-dev \
                             libwebp-dev \
                             libvorbis-dev \
