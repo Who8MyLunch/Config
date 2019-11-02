@@ -8,6 +8,7 @@ Install virtualenvwrapper (https://virtualenvwrapper.readthedocs.io/en/latest/in
     pip3.8 install --user -U pip setuptools
     pip3.8 install --user virtualenvwrapper
 
+
 Then follow the instructions included at the top of the shell script `~/.local/bin/virtualenvwrapper.sh`.  For me this involved the following steps:
 
     mkdir ~/.virtualenvs
@@ -15,7 +16,7 @@ Then follow the instructions included at the top of the shell script `~/.local/b
 Add the following lines to my .bashrc:
 
     export WORKON_HOME=${HOME}/.virtualenvs
-    export VIRTUALENVWRAPPER_PYTHON=${HOME}/.local/bin/python3.7
+    export VIRTUALENVWRAPPER_PYTHON=${HOME}/.local/bin/python3.8
     export VIRTUALENVWRAPPER_VIRTUALENV=${HOME}/.local/bin/virtualenv
     export PROJECT_HOME=${HOME}/Projects
     source ${HOME}/.local/bin/virtualenvwrapper.sh
@@ -34,6 +35,5 @@ You should see an empty list of available virtualenvironments.  See the docs for
 # Make a new env associated with a project
 
     mkvirtualenv --system-site-packages -a ~/Projects/ipynb_widget_canvas canvas_env
-
 
 May need to fiddle around to allow new virtualenvs to inherit from user or system Python

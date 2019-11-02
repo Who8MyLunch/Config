@@ -8,22 +8,7 @@ linux:   $HOME/.config/pip/pip.conf
 windows: %APPDATA%\pip\pip.ini
 
 
-Example pip.conf on linux:
-
-        [global]
-            timeout = 60
-            wheel-dir = /home/pierre/wheelhouse
-            find-links = /home/pierre/wheelhouse
-            cache-dir = /home/pierre/wheelhouse/cache
-
-        [list]
-            format=columns
-
-        [install]
-            user = false
-
-        [freeze]
-            timeout = 10
+See pip.conf for example contents.
 
 
 # Build wheels from source
