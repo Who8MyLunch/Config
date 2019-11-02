@@ -1,5 +1,9 @@
 
 
+# General
+
+    sudo apt-get -y install software-properties-common
+
 # Update System
 
     sudo apt-get update
