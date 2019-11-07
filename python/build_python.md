@@ -42,7 +42,6 @@ Update and install Python build dependenacies:
     sudo apt-get build-dep python3.8    # use version to match your scenario
 
 
-
 # Download Source
 
 Download Python source from here: https://www.python.org/downloads
@@ -50,7 +49,7 @@ Download Python source from here: https://www.python.org/downloads
 Run the lines below to download Python source and extract to project folder.  Update version
 number to desired number.
 
-    ver=3.8.0
+    ver=3.7.4
 
     cd ~/Projects
     wget https://www.python.org/ftp/python/${ver}/Python-${ver}.tar.xz
@@ -65,10 +64,11 @@ number to desired number.
 Use the `prefix` option below to specify building and installing to the user's environment.
 The option `--enable-optimizations` significantly lengthens compile time.
 
+    prefix="/usr/local"
     prefix="$HOME/.local"
 
-    # make clean
     ./configure --enable-optimizations --with-lto --prefix=$prefix
+
     make
 
     # make test
