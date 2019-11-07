@@ -30,7 +30,6 @@ Double check PPA key at site: http://ppa.launchpad.net/deadsnakes/ppa.
 Helpful stuff: https://superuser.com/questions/620765/sudo-apt-key-adv-keyserver-keyserver-ubuntu-com-recv-7f0ceb10-command-return
 
     key=F23C5A6CF475977595C89F51BA6932366A755776
-
     sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ${key}
 
 
@@ -42,7 +41,6 @@ Update and install Python build dependenacies:
     sudo apt-get build-dep python3.8    # use version to match your scenario
 
 
-
 # Download Source
 
 Download Python source from here: https://www.python.org/downloads
@@ -50,7 +48,7 @@ Download Python source from here: https://www.python.org/downloads
 Run the lines below to download Python source and extract to project folder.  Update version
 number to desired number.
 
-    ver=3.8.0
+    ver=3.7.4
 
     cd ~/Projects
     wget https://www.python.org/ftp/python/${ver}/Python-${ver}.tar.xz
@@ -65,10 +63,11 @@ number to desired number.
 Use the `prefix` option below to specify building and installing to the user's environment.
 The option `--enable-optimizations` significantly lengthens compile time.
 
-    prefix="$HOME/.local"
+    # my_prefix="/usr/local"
+    my_refix="$HOME/.local"
 
-    # make clean
-    ./configure --enable-optimizations --with-lto --prefix=$prefix
+    ./configure --enable-optimizations --with-lto --prefix=${my_prefix}
+
     make
 
     # make test
