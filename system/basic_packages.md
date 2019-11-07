@@ -34,7 +34,6 @@ Install these packages as baasic requirements
                             libblas-dev \
                             libopenblas-dev
 
-
 # Gstreamer
 
     sudo apt-get -y install libgstreamer1.0-0 \
@@ -54,6 +53,7 @@ Install these packages as baasic requirements
                             libwebp-dev \
                             libvorbis-dev \
                             libtheora-dev
+
 # Video file I/O
 
     sudo apt-get -y install libopencv-dev \
