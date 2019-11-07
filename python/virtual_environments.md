@@ -15,11 +15,17 @@ Then follow the instructions included at the top of the shell script `~/.local/b
 
 Add the following lines to my .bashrc:
 
+# Python virtual environments
+
+    # my_prefix=/usr/local
+    my_prefix=${HOME}/.local
+
+    export VIRTUALENVWRAPPER_PYTHON=${my_prefix}/bin/python3.7
+    export VIRTUALENVWRAPPER_VIRTUALENV=${my_prefix}/bin/virtualenv
+    source ${my_prefix}/bin/virtualenvwrapper.sh
+
     export WORKON_HOME=${HOME}/.virtualenvs
-    export VIRTUALENVWRAPPER_PYTHON=${HOME}/.local/bin/python3.8
-    export VIRTUALENVWRAPPER_VIRTUALENV=${HOME}/.local/bin/virtualenv
     export PROJECT_HOME=${HOME}/Projects
-    source ${HOME}/.local/bin/virtualenvwrapper.sh
 
 Run
 

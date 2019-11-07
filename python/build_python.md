@@ -30,7 +30,6 @@ Double check PPA key at site: http://ppa.launchpad.net/deadsnakes/ppa.
 Helpful stuff: https://superuser.com/questions/620765/sudo-apt-key-adv-keyserver-keyserver-ubuntu-com-recv-7f0ceb10-command-return
 
     key=F23C5A6CF475977595C89F51BA6932366A755776
-
     sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ${key}
 
 
@@ -64,10 +63,10 @@ number to desired number.
 Use the `prefix` option below to specify building and installing to the user's environment.
 The option `--enable-optimizations` significantly lengthens compile time.
 
-    prefix="/usr/local"
-    prefix="$HOME/.local"
+    # my_prefix="/usr/local"
+    my_refix="$HOME/.local"
 
-    ./configure --enable-optimizations --with-lto --prefix=$prefix
+    ./configure --enable-optimizations --with-lto --prefix=${my_prefix}
 
     make
 
