@@ -100,10 +100,6 @@ if [ -x /usr/bin/mint-fortune ]; then
      /usr/bin/mint-fortune
 fi
 
-# UTF-8
-# export LC_ALL=en_US.UTF-8
-# export LANG=en_US.UTF-8
-# export LANGUAGE=en_US.UTF-8
 
 #------------------------------------------------
 # General path modifications
@@ -136,7 +132,7 @@ export C_INCLUDE_PATH=${C_INCLUDE_PATH}:${my_prefix}/include
 export CPLUS_INCLUDE_PATH=${CPLUS_INCLUDE_PATH}:${my_prefix}/include
 
 # https://askubuntu.com/questions/210210/pkg-config-path-environment-variable
-export PKG_CONFIG_PATH=${usr_prefix}/lib/pkgconfig
+export PKG_CONFIG_PATH=${my_prefix}/lib/pkgconfig:${usr_prefix}/lib/pkgconfig:${PKG_CONFIG_PATH}
 
 # ssh agent stuff
 eval `keychain --eval --quiet --inherit any-once --agents ssh id_rsa`
