@@ -109,9 +109,9 @@ my_prefix=${HOME}/.local
 export PATH=${PATH}:${HOME}/node_modules/.bin
 
 # Python virtual environments
-export VIRTUALENVWRAPPER_PYTHON=${usr_prefix}/bin/python3.7
-export VIRTUALENVWRAPPER_VIRTUALENV=${usr_prefix}/bin/virtualenv
-source ${usr_prefix}/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_PYTHON=${my_prefix}/bin/python3.7
+export VIRTUALENVWRAPPER_VIRTUALENV=${my_prefix}/bin/virtualenv
+source ${my_prefix}/bin/virtualenvwrapper.sh
 
 export WORKON_HOME=${HOME}/.virtualenvs
 export PROJECT_HOME=${HOME}/Projects
