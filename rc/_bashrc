@@ -96,14 +96,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
-if [ -x /usr/bin/mint-fortune ]; then
-     /usr/bin/mint-fortune
-fi
-
 
 #------------------------------------------------
 # General path modifications
-usr_prefix=/usr/local
 my_prefix=${HOME}/.local
 
 export PATH=${PATH}:${HOME}/node_modules/.bin
@@ -117,22 +112,27 @@ export WORKON_HOME=${HOME}/.virtualenvs
 export PROJECT_HOME=${HOME}/Projects
 
 #------------------------------------------------
-# Developer stuff
-export PATH=${PATH}:${usr_prefix}/bin
-export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${usr_prefix}/lib
-export LIBRARY_PATH=${LIBRARY_PATH}:${usr_prefix}/lib
-export C_INCLUDE_PATH=${C_INCLUDE_PATH}:${usr_prefix}/include
-export CPLUS_INCLUDE_PATH=${CPLUS_INCLUDE_PATH}:${usr_prefix}/include
-
 # https://stackoverflow.com/questions/4250624/ld-library-path-vs-library-path
-export PATH=${PATH}:${my_prefix}/bin
-export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${my_prefix}/lib
-export LIBRARY_PATH=${LIBRARY_PATH}:${my_prefix}/lib
-export C_INCLUDE_PATH=${C_INCLUDE_PATH}:${my_prefix}/include
-export CPLUS_INCLUDE_PATH=${CPLUS_INCLUDE_PATH}:${my_prefix}/include
+#    LIBRARY_PATH is used by gcc before compilation to search directories containing static and shared libraries that need to be linked to your program.
+# LD_LIBRARY_PATH is used by your program to search directories containing shared libraries after it has been successfully compiled and linked.
+# Why LD_LIBRARY_PATH is bad: http://xahlee.info/UnixResource_dir/_/ldpath.html
 
-# https://askubuntu.com/questions/210210/pkg-config-path-environment-variable
-export PKG_CONFIG_PATH=${my_prefix}/lib/pkgconfig:${usr_prefix}/lib/pkgconfig:${PKG_CONFIG_PATH}
+# System paths
+export PATH=${PATH}:/usr/local/bin
+# # export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${usr_prefix}/lib
+export LIBRARY_PATH=/usr/local/lib:${LIBRARY_PATH}
+# export C_INCLUDE_PATH=${C_INCLUDE_PATH}:/usr/local/include
+# export CPLUS_INCLUDE_PATH=${CPLUS_INCLUDE_PATH}:/usr/local/include
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:${PKG_CONFIG_PATH}  # https://askubuntu.com/questions/210210/pkg-config-path-environment-variable
+
+
+# Local paths
+export PATH=${PATH}:${my_prefix}/bin
+# export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${my_prefix}/lib
+export LIBRARY_PATH=${my_prefix}/lib:${LIBRARY_PATH}
+export C_INCLUDE_PATH=${my_prefix}/include:${C_INCLUDE_PATH}
+export CPLUS_INCLUDE_PATH=${my_prefix}/include:${CPLUS_INCLUDE_PATH}
+export PKG_CONFIG_PATH=${my_prefix}/lib/pkgconfig:${PKG_CONFIG_PATH}  # https://askubuntu.com/questions/210210/pkg-config-path-environment-variable
 
 # ssh agent stuff
 eval `keychain --eval --quiet --inherit any-once --agents ssh id_rsa`

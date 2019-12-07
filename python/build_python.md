@@ -2,7 +2,7 @@
 
 # Update System
 
-Install packages outlined in `basic_packages.md`.
+Install packages outlined in `system/basic_packages.md`.
 
 
 # Get Ready to Compile
