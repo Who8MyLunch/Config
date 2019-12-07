@@ -101,7 +101,6 @@ fi
 # General path modifications
 my_prefix=${HOME}/.local
 
-export PATH=${PATH}:${HOME}/node_modules/.bin
 
 # Python virtual environments
 export VIRTUALENVWRAPPER_PYTHON=${my_prefix}/bin/python3.7
@@ -121,12 +120,12 @@ export PROJECT_HOME=${HOME}/Projects
 export PATH=${PATH}:/usr/local/bin
 # # export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${usr_prefix}/lib
 export LIBRARY_PATH=/usr/local/lib:${LIBRARY_PATH}
-# export C_INCLUDE_PATH=${C_INCLUDE_PATH}:/usr/local/include
-# export CPLUS_INCLUDE_PATH=${CPLUS_INCLUDE_PATH}:/usr/local/include
+export C_INCLUDE_PATH=/usr/local/include:${C_INCLUDE_PATH}
+export CPLUS_INCLUDE_PATH=/usr/local/include:${CPLUS_INCLUDE_PATH}
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:${PKG_CONFIG_PATH}  # https://askubuntu.com/questions/210210/pkg-config-path-environment-variable
 
-
 # Local paths
+export PATH=${PATH}:${HOME}/node_modules/.bin
 export PATH=${PATH}:${my_prefix}/bin
 # export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${my_prefix}/lib
 export LIBRARY_PATH=${my_prefix}/lib:${LIBRARY_PATH}
