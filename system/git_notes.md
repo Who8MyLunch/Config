@@ -1,12 +1,4 @@
 
-# IPython from github:
-
-Clone repo to local folder:
-
-http://git-scm.com/docs/git-clone
-
-    git clone --recursive git://github.com/ipython/ipython.git
-
 
 ## Checkout Specific Tag
 

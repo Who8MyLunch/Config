@@ -48,7 +48,7 @@ Download Python source from here: https://www.python.org/downloads
 Run the lines below to download Python source and extract to project folder.  Update version
 number to desired number.
 
-    ver=3.7.4
+    ver=3.8.1
 
     cd ~/Projects
     wget https://www.python.org/ftp/python/${ver}/Python-${ver}.tar.xz

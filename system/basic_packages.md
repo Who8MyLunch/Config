@@ -1,18 +1,12 @@
 
-# Maybe??
-
-https://www.tecmint.com/tlp-increase-and-optimize-linux-battery-life/
-
-
-
 # Install Packages
 
     sudo apt-get update
     sudo apt-get -y dist-upgrade
 
-Install these packages as baasic requirements
+Install these packages as basic requirements
 
-    sudo apt-get -y install git-core  \
+    sudo apt-get -y install git  \
                             dirmngr \
                             software-properties-common \
                             keychain \
@@ -40,18 +34,9 @@ Install these packages as baasic requirements
                             libblas-dev \
                             libopenblas-dev
 
-# Gstreamer
-
-    sudo apt-get -y install libgstreamer1.0-0 \
-                            gstreamer1.0-plugins-base \
-                            gstreamer1.0-plugins-good \
-                            gstreamer1.0-plugins-bad \
-                            gstreamer1.0-plugins-ugly \
-                            gstreamer1.0-libav \
-                            gstreamer1.0-doc \
-                            gstreamer1.0-tools
-
 # Image file I/O
+
+Install as needed
 
     sudo apt-get -y install libjpeg-dev \
                             libpng-dev \
@@ -61,6 +46,8 @@ Install these packages as baasic requirements
                             libtheora-dev
 
 # Video file I/O
+
+Install as needed
 
     sudo apt-get -y install libopencv-dev \
                             libavcodec-dev \

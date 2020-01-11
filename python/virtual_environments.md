@@ -5,8 +5,8 @@ https://virtualenvwrapper.readthedocs.org/en/latest/command_ref.html
 
 Install virtualenvwrapper (https://virtualenvwrapper.readthedocs.io/en/latest/install.html) to user space or to user's own custom compiled Python environment.
 
-    pip3.7 install --user -U pip setuptools
-    pip3.7 install --user virtualenvwrapper
+    pip3.8 install --user -U pip setuptools
+    pip3.8 install --user virtualenvwrapper
 
 
 Then follow the instructions included at the top of the shell script `~/.local/bin/virtualenvwrapper.sh`.  For me this involved the following steps:
@@ -20,7 +20,7 @@ Add the following lines to my .bashrc:
     # my_prefix=/usr/local
     my_prefix=${HOME}/.local
 
-    export VIRTUALENVWRAPPER_PYTHON=${my_prefix}/bin/python3.7
+    export VIRTUALENVWRAPPER_PYTHON=${my_prefix}/bin/python3.8
     export VIRTUALENVWRAPPER_VIRTUALENV=${my_prefix}/bin/virtualenv
     source ${my_prefix}/bin/virtualenvwrapper.sh
 
