@@ -3,7 +3,7 @@ https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-
 
 # Generate new keys
 
-ssh-keygen -t rsa -b 4096 -C "your_name_here@gmail.com"
+ssh-keygen -t rsa -b 4096 -C "pierre.villeneuve@gmail.com"
 
 ## ssh-copy-id
 
@@ -13,7 +13,7 @@ Copy your public credentials over to other device so you don’t have to keep ty
 
 
 ```bash
-ssh-copy-id -i ~/.ssh/id_rsa user_name@remote_host.what
+ssh-copy-id -i ~/.ssh/id_rsa user@remote_host.what
 ```
 
 ## ssh-agent

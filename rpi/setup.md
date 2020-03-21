@@ -62,9 +62,9 @@ sudo adduser $u
 ```sh
 # known groups
 cat /etc/group
-```
 
-```sh
+u=pi
+
 sudo usermod -aG sudo $u
 sudo usermod -aG dialout $u
 sudo usermod -aG i2c $u

@@ -11,6 +11,7 @@ Install these packages as basic requirements
                             software-properties-common \
                             keychain \
                             vim \
+                            screen \
                             subversion \
                             dkms \
                             libtool \

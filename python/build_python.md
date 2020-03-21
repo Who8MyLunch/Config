@@ -23,8 +23,8 @@ name differences between debian and ubuntu: https://askubuntu.com/questions/4454
 
 Add following lines to /etc/apt/sources.list:
 
-    deb http://ppa.launchpad.net/deadsnakes/ppa/ubuntu xenial main
-    deb-src http://ppa.launchpad.net/deadsnakes/ppa/ubuntu xenial main
+    deb http://ppa.launchpad.net/deadsnakes/ppa/ubuntu bionic main
+    deb-src http://ppa.launchpad.net/deadsnakes/ppa/ubuntu bionic main
 
 Double check PPA key at site: http://ppa.launchpad.net/deadsnakes/ppa.
 Helpful stuff: https://superuser.com/questions/620765/sudo-apt-key-adv-keyserver-keyserver-ubuntu-com-recv-7f0ceb10-command-return
@@ -63,12 +63,18 @@ number to desired number.
 Use the `prefix` option below to specify building and installing to the user's environment.
 The option `--enable-optimizations` significantly lengthens compile time.
 
-    # my_prefix="/usr/local"
-    my_refix="$HOME/.local"
+```bash
+# http://www.tldp.org/HOWTO/HighQuality-Apps-HOWTO/fhs.html
+my_prefix="/usr/local"
+# my_refix="$HOME/.local"
 
-    ./configure --enable-optimizations --with-lto --prefix=${my_prefix}
+./configure --enable-optimizations --with-lto --prefix=${my_prefix}
 
-    make
+make
+# make test
 
-    # make test
-    make install
+# https://www.linuxjournal.com/content/using-checkinstall-build-packages-source
+sudo checkinstall
+# make install
+
+```
