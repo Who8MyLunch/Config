@@ -12,25 +12,7 @@ available in default PPAs.
 
     apt-cache search python3.8
 
-If this comes up empty then need to add deadsnakes PPA for access to newer versions.
-This article is very useful: https://askubuntu.com/questions/38021/how-to-add-a-ppa-on-a-server
-
-Next update `/etc/apt/sources.list` to enable source files.  Maybe need to worry about possible
-name differences between debian and ubuntu: https://askubuntu.com/questions/445487/what-debian-version-are-the-different-ubuntu-versions-based-on
-
-
-## Deadsnakes PPA
-
-Add following lines to /etc/apt/sources.list:
-
-    deb http://ppa.launchpad.net/deadsnakes/ppa/ubuntu bionic main
-    deb-src http://ppa.launchpad.net/deadsnakes/ppa/ubuntu bionic main
-
-Double check PPA key at site: http://ppa.launchpad.net/deadsnakes/ppa.
-Helpful stuff: https://superuser.com/questions/620765/sudo-apt-key-adv-keyserver-keyserver-ubuntu-com-recv-7f0ceb10-command-return
-
-    key=F23C5A6CF475977595C89F51BA6932366A755776
-    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ${key}
+If this comes up empty then need to add deadsnakes PPA for access to newer versions.  See `deadsnakes_ppa.md`.
 
 
 ## Build Dependencies
@@ -38,7 +20,7 @@ Helpful stuff: https://superuser.com/questions/620765/sudo-apt-key-adv-keyserver
 Update and install Python build dependenacies:
 
     sudo apt-get update
-    sudo apt-get build-dep python3.8    # use version to match your scenario
+    sudo apt-get build-dep python3.8
 
 
 # Download Source
@@ -48,7 +30,7 @@ Download Python source from here: https://www.python.org/downloads
 Run the lines below to download Python source and extract to project folder.  Update version
 number to desired number.
 
-    ver=3.8.1
+    ver=3.8.2
 
     cd ~/Projects
     wget https://www.python.org/ftp/python/${ver}/Python-${ver}.tar.xz
@@ -65,8 +47,8 @@ The option `--enable-optimizations` significantly lengthens compile time.
 
 ```bash
 # http://www.tldp.org/HOWTO/HighQuality-Apps-HOWTO/fhs.html
-my_prefix="/usr/local"
-# my_refix="$HOME/.local"
+# my_prefix="/usr/local"
+my_refix="$HOME/.local"
 
 ./configure --enable-optimizations --with-lto --prefix=${my_prefix}
 
