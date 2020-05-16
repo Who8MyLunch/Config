@@ -52,9 +52,7 @@ https://www.cyberciti.biz/faq/howto-linux-add-user-to-group/
 ## New user
 
 ```sh
-u=your_user_name_here
-
-sudo adduser $u
+sudo adduser $USER
 ```
 
 ## Add user to groups
@@ -63,13 +61,11 @@ sudo adduser $u
 # known groups
 cat /etc/group
 
-u=pi
-
-sudo usermod -aG sudo $u
-sudo usermod -aG dialout $u
-sudo usermod -aG i2c $u
-sudo usermod -aG spi $u
-sudo usermod -aG gpio $u
-sudo usermod -aG audio $u
-sudo usermod -aG video $u
+sudo usermod -aG sudo $USER
+sudo usermod -aG dialout $USER
+sudo usermod -aG i2c $USER
+sudo usermod -aG spi $USER
+sudo usermod -aG gpio $USER
+sudo usermod -aG audio $USER
+sudo usermod -aG video $USER
 ```
