@@ -28,7 +28,8 @@ Install these packages as basic requirements
                             libfreetype6-dev \
                             zlib1g-dev \
                             libxslt1-dev \
-                            libxml2-dev
+                            libxml2-dev \
+                            libdbus-1-dev
 
 
 
