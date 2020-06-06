@@ -76,18 +76,13 @@ xterm*|rxvt*)
     ;;
 esac
 
-# colored GCC warnings and errors
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
-
 # Alias definitions.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-# sources /etc/bash.bashrc).
+# enable programmable completion features (you don't need to enable this, if it's already enabled in /etc/bash.bashrc and /etc/profile sources /etc/bash.bashrc).
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
@@ -103,12 +98,27 @@ my_prefix=${HOME}/.local
 
 
 # Python virtual environments
-export VIRTUALENVWRAPPER_PYTHON=${my_prefix}/bin/python3.7
+export VIRTUALENVWRAPPER_PYTHON=${my_prefix}/bin/python3.8
 export VIRTUALENVWRAPPER_VIRTUALENV=${my_prefix}/bin/virtualenv
 source ${my_prefix}/bin/virtualenvwrapper.sh
 
 export WORKON_HOME=${HOME}/.virtualenvs
 export PROJECT_HOME=${HOME}/Projects
+
+# System paths
+export PATH=${PATH}:/usr/local/bin
+export LIBRARY_PATH=/usr/local/lib:${LIBRARY_PATH}
+export C_INCLUDE_PATH=/usr/local/include:${C_INCLUDE_PATH}
+export CPLUS_INCLUDE_PATH=/usr/local/include:${CPLUS_INCLUDE_PATH}
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:${PKG_CONFIG_PATH}  # https://askubuntu.com/questions/210210/pkg-config-path-environment-variable
+
+# Local paths
+# export PATH=${PATH}:${HOME}/node_modules/.bin
+export PATH=${PATH}:${my_prefix}/bin
+export LIBRARY_PATH=${my_prefix}/lib:${LIBRARY_PATH}
+export C_INCLUDE_PATH=${my_prefix}/include:${C_INCLUDE_PATH}
+export CPLUS_INCLUDE_PATH=${my_prefix}/include:${CPLUS_INCLUDE_PATH}
+export PKG_CONFIG_PATH=${my_prefix}/lib/pkgconfig:${PKG_CONFIG_PATH}  # https://askubuntu.com/questions/210210/pkg-config-path-environment-variable
 
 #------------------------------------------------
 # https://stackoverflow.com/questions/4250624/ld-library-path-vs-library-path
@@ -116,22 +126,9 @@ export PROJECT_HOME=${HOME}/Projects
 # LD_LIBRARY_PATH is used by your program to search directories containing shared libraries after it has been successfully compiled and linked.
 # Why LD_LIBRARY_PATH is bad: http://xahlee.info/UnixResource_dir/_/ldpath.html
 
-# System paths
-export PATH=${PATH}:/usr/local/bin
-# # export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${usr_prefix}/lib
-export LIBRARY_PATH=/usr/local/lib:${LIBRARY_PATH}
-export C_INCLUDE_PATH=/usr/local/include:${C_INCLUDE_PATH}
-export CPLUS_INCLUDE_PATH=/usr/local/include:${CPLUS_INCLUDE_PATH}
-export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:${PKG_CONFIG_PATH}  # https://askubuntu.com/questions/210210/pkg-config-path-environment-variable
-
-# Local paths
-export PATH=${PATH}:${HOME}/node_modules/.bin
-export PATH=${PATH}:${my_prefix}/bin
+# export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${usr_prefix}/lib
 # export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${my_prefix}/lib
-export LIBRARY_PATH=${my_prefix}/lib:${LIBRARY_PATH}
-export C_INCLUDE_PATH=${my_prefix}/include:${C_INCLUDE_PATH}
-export CPLUS_INCLUDE_PATH=${my_prefix}/include:${CPLUS_INCLUDE_PATH}
-export PKG_CONFIG_PATH=${my_prefix}/lib/pkgconfig:${PKG_CONFIG_PATH}  # https://askubuntu.com/questions/210210/pkg-config-path-environment-variable
+
 
 # ssh agent stuff
 eval `keychain --eval --quiet --inherit any-once --agents ssh id_rsa`
