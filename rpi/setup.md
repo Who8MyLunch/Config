@@ -47,8 +47,6 @@ Change setting for:
 
 # Users and Groups
 
-https://www.cyberciti.biz/faq/howto-linux-add-user-to-group/
-
 ## New user
 
 ```sh

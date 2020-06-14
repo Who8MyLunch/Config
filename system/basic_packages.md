@@ -6,32 +6,32 @@
 
 Install these packages as basic requirements
 
-    sudo apt-get -y install git  \
-                            dirmngr \
-                            software-properties-common \
+    sudo apt-get -y install \
                             keychain \
                             vim \
+                            dirmngr \
                             screen \
+                            git  \
                             subversion \
                             dkms \
                             libtool \
                             autoconf \
                             automake \
-                            pkg-config \
                             cmake \
+                            pkg-config \
+                            software-properties-common \
                             build-essential \
                             gfortran  \
                             libtbb2 \
                             libtbb-dev \
-                            liblcms2-dev \
-                            texinfo \
-                            libfreetype6-dev \
                             zlib1g-dev \
                             libxslt1-dev \
-                            libxml2-dev \
-                            libdbus-1-dev
+                            libxml2-dev
 
-
+    #                        liblcms2-dev \
+    #                        texinfo \
+    #                        libfreetype6-dev \
+    #                        libdbus-1-dev
 
 # Science and Engineering
 
@@ -39,7 +39,6 @@ Install these packages as basic requirements
                             liblapack-dev \
                             libblas-dev \
                             libopenblas-dev
-
 
 ## Image file I/O
 
