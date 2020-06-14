@@ -11,9 +11,7 @@ Use `lsblk` before and after inserting sdcard into laptop to see its device name
 Use dd to copy image to sdcard:
 
 ```bash
-
 sudo dd bs=4M if=~/Desktop/file_name of=/dev/sdc
-
 ```
 
 ### Enable ssh
