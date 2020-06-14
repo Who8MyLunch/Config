@@ -52,7 +52,7 @@ https://www.cyberciti.biz/faq/howto-linux-add-user-to-group/
 ## New user
 
 ```sh
-sudo adduser $USER
+sudo adduser <NAME>
 ```
 
 ## Add user to groups
