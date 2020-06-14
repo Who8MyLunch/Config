@@ -27,25 +27,25 @@ https://www.ssh.com/ssh/copy-id
 Copy your public credentials over to other device so you don’t have to keep typing your password
 
 
-```bash
+```sh
 ssh-copy-id -i ~/.ssh/id_rsa user@remote_host.what
 ```
 
 ## ssh-agent
 
-https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
-
-https://www.cyberciti.biz/faq/ubuntu-debian-linux-server-install-keychain-apt-get-command/
+- https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
+- https://www.cyberciti.biz/faq/ubuntu-debian-linux-server-install-keychain-apt-get-command/
+- https://github.com/funtoo/keychain
 
 Start the ssh-agent in the background.
 
-```
+```sh
 $ eval "$(ssh-agent -s)"
 ```
 
 Add key to ssh-agent
 
-```
+```sh
 $ ssh-add ~/.ssh/id_rsa
 ```
 
@@ -53,13 +53,13 @@ $ ssh-add ~/.ssh/id_rsa
 
 Install keychain if not already installed.
 
-```
+```sh
 sudo apt-get install keychain
 ```
 
 Add this line to .bashrc:
 
-eval `keychain --eval --quiet --inherit any-once --agents ssh id_rsa`
+    eval `keychain --eval --quiet --inherit any-once --agents ssh id_rsa`
 
 
 ## github
