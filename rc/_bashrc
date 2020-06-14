@@ -113,7 +113,6 @@ export CPLUS_INCLUDE_PATH=/usr/local/include:${CPLUS_INCLUDE_PATH}
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:${PKG_CONFIG_PATH}  # https://askubuntu.com/questions/210210/pkg-config-path-environment-variable
 
 # Local paths
-# export PATH=${PATH}:${HOME}/node_modules/.bin
 export PATH=${PATH}:${my_prefix}/bin
 export LIBRARY_PATH=${my_prefix}/lib:${LIBRARY_PATH}
 export C_INCLUDE_PATH=${my_prefix}/include:${C_INCLUDE_PATH}
