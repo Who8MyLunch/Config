@@ -94,10 +94,12 @@ fi
 
 #------------------------------------------------
 # General path modifications
+# http://www.tldp.org/HOWTO/HighQuality-Apps-HOWTO/fhs.html
 my_prefix=${HOME}/.local
 
 
 # Python virtual environments
+# https://virtualenvwrapper.readthedocs.io/en/latest/install.html
 export VIRTUALENVWRAPPER_PYTHON=${my_prefix}/bin/python3.8
 export VIRTUALENVWRAPPER_VIRTUALENV=${my_prefix}/bin/virtualenv
 source ${my_prefix}/bin/virtualenvwrapper.sh
@@ -106,6 +108,7 @@ export WORKON_HOME=${HOME}/.virtualenvs
 export PROJECT_HOME=${HOME}/Projects
 
 # System paths
+# http://www.tldp.org/HOWTO/HighQuality-Apps-HOWTO/fhs.html
 export PATH=${PATH}:/usr/local/bin
 export LIBRARY_PATH=/usr/local/lib:${LIBRARY_PATH}
 export C_INCLUDE_PATH=/usr/local/include:${C_INCLUDE_PATH}
@@ -113,6 +116,7 @@ export CPLUS_INCLUDE_PATH=/usr/local/include:${CPLUS_INCLUDE_PATH}
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:${PKG_CONFIG_PATH}  # https://askubuntu.com/questions/210210/pkg-config-path-environment-variable
 
 # Local paths
+# http://www.tldp.org/HOWTO/HighQuality-Apps-HOWTO/fhs.html
 export PATH=${PATH}:${my_prefix}/bin
 export LIBRARY_PATH=${my_prefix}/lib:${LIBRARY_PATH}
 export C_INCLUDE_PATH=${my_prefix}/include:${C_INCLUDE_PATH}

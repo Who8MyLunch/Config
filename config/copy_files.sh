@@ -10,6 +10,9 @@ done
 
 #------------------------------------
 # Python stuff
+
+mkdir $HOME/wheelhouse   # not sure if this is needed or not???
+
 # https://pip.readthedocs.io/en/latest/user_guide/#configuration
 file=pip.conf
 dest=$HOME/.config/pip/
