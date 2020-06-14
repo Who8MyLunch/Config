@@ -1,8 +1,21 @@
 
+# Philosophy
+
+I want my virtualenv projects to operate with the Python interpreter that I compile myself.  Any
+use of Python outside of one of my virtual environments should use the system Python.  The same
+goes for any Python-based tools, like pip, scons, etc.
 
 # Update System
 
 Install packages outlined in `system/basic_packages.md`.
+
+Configure system to operate with python3 as the preferred interpreter instead of python2
+
+    sudo apt install python-is-python3
+
+Then verify:
+
+    python -V
 
 
 # Get Ready to Compile
@@ -30,7 +43,7 @@ Download Python source from here: https://www.python.org/downloads
 Run the lines below to download Python source and extract to project folder.  Update version
 number to desired number.
 
-    ver=3.8.2
+    ver=3.8.3
 
     cd ~/Projects
     wget https://www.python.org/ftp/python/${ver}/Python-${ver}.tar.xz
@@ -43,7 +56,7 @@ number to desired number.
 # Compile
 
 Use the `prefix` option below to specify building and installing to the user's environment.
-The option `--enable-optimizations` significantly lengthens compile time.
+The option `--enable-optimizations` may lengthen compile time.
 
 ```bash
 # http://www.tldp.org/HOWTO/HighQuality-Apps-HOWTO/fhs.html
@@ -56,7 +69,8 @@ make
 # make test
 
 # https://www.linuxjournal.com/content/using-checkinstall-build-packages-source
-sudo checkinstall
-# make install
+# sudo checkinstall  # don't use this.  it goiees against our philosophy.
+
+make install
 
 ```
