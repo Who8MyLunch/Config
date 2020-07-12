@@ -11,7 +11,7 @@ Add following lines to /etc/apt/sources.list:
     deb http://ppa.launchpad.net/deadsnakes/ppa/ubuntu bionic main
     deb-src http://ppa.launchpad.net/deadsnakes/ppa/ubuntu bionic main
 
-Double check PPA key at site: http://ppa.launchpad.net/deadsnakes/ppa.
+Double check PPA key at site: https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa.
 
 Helpful stuff: https://superuser.com/questions/620765/sudo-apt-key-adv-keyserver-keyserver-ubuntu-com-recv-7f0ceb10-command-return
 
