@@ -21,17 +21,7 @@ Install these packages as basic requirements
                             pkg-config \
                             software-properties-common \
                             build-essential \
-                            gfortran  \
-                            libtbb2 \
-                            libtbb-dev \
-                            zlib1g-dev \
-                            libxslt1-dev \
-                            libxml2-dev
-
-    #                        liblcms2-dev \
-    #                        texinfo \
-    #                        libfreetype6-dev \
-    #                        libdbus-1-dev
+                            gfortran
 
 # Science and Engineering
 
