@@ -4,7 +4,8 @@
 Update `/etc/apt/sources.list` to enable source files.  Maybe need to worry about possible
 name differences between debian and ubuntu: https://askubuntu.com/questions/445487/what-debian-version-are-the-different-ubuntu-versions-based-on
 
-This article is very useful: https://askubuntu.com/questions/38021/how-to-add-a-ppa-on-a-server
+This article has everything:
+https://askubuntu.com/questions/38021/how-to-add-a-ppa-on-a-server/38029#38029
 
 
 Add following lines to /etc/apt/sources.list:
