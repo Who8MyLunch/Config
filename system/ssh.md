@@ -64,8 +64,8 @@ Add this line to .bashrc:
 
 ## github
 
-https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
-https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
-https://help.github.com/articles/testing-your-ssh-connection/
+- https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
+- https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
+- https://help.github.com/articles/testing-your-ssh-connection/
 
 
