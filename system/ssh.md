@@ -28,7 +28,7 @@ Copy your public credentials over to other device so you don’t have to keep ty
 
 
 ```sh
-ssh-copy-id -i ~/.ssh/id_rsa user@remote_host.what
+ssh-copy-id -i ~/.ssh/id_rsa.pub user@remote_host.what
 ```
 
 ## ssh-agent
