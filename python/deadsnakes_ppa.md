@@ -8,8 +8,8 @@ https://askubuntu.com/questions/38021/how-to-add-a-ppa-on-a-server/38029#38029
 
 Add following lines to /etc/apt/sources.list:
 
-    deb http://ppa.launchpad.net/deadsnakes/ppa/ubuntu bionic main
-    deb-src http://ppa.launchpad.net/deadsnakes/ppa/ubuntu bionic main
+    deb http://ppa.launchpad.net/deadsnakes/ppa/ubuntu eoan main
+    deb-src http://ppa.launchpad.net/deadsnakes/ppa/ubuntu eoan main
 
 Double check PPA key at site: https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa.
 

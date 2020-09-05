@@ -20,6 +20,7 @@ Install these packages as basic requirements
                             cmake \
                             pkg-config \
                             software-properties-common \
+                            python-software-properties \
                             build-essential \
                             gfortran
 
