@@ -37,6 +37,7 @@ Update and install Python build dependenacies:
 ```bash
 sudo apt-get update
 sudo apt-get build-dep python3.8
+sudo apt install python3.8-dev
 ```
 
 # Download Source
