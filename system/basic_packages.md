@@ -30,7 +30,8 @@ Install these packages as basic requirements
     sudo apt-get -y install libfftw3-dev \
                             liblapack-dev \
                             libblas-dev \
-                            libopenblas-dev
+                            libopenblas-dev \
+                            libatlas-base-dev
 
 ## Image file I/O
 
