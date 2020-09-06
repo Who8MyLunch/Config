@@ -15,6 +15,8 @@ Configure system to operate with python3 as the preferred interpreter instead of
 sudo apt install python-is-python3
 ```
 
+Or maybe: `ln -s /usr/bin/python3.8 /usr/bin/python`
+
 Then verify with `python -V`.
 
 
