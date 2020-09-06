@@ -22,6 +22,7 @@ Install these packages as basic requirements
                             software-properties-common \
                             python-software-properties \
                             build-essential \
+                            libusb-dev \
                             gfortran
 
 # Science and Engineering
