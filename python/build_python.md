@@ -50,7 +50,7 @@ Run the lines below to download Python source and extract to project folder.  Up
 number to desired number.
 
 ```bash
-ver=3.8.3
+ver=3.8.5
 cd ~/Projects
 wget https://www.python.org/ftp/python/${ver}/Python-${ver}.tar.xz
 tar xvf Python-${ver}.tar.xz
