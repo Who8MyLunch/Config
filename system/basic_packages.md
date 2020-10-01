@@ -21,6 +21,7 @@ Install these packages as basic requirements
                             pkg-config \
                             software-properties-common \
                             build-essential \
+                            libffi-dev \
                             libusb-dev \
                             gfortran
 
