@@ -23,6 +23,17 @@ Install these packages as basic requirements
                             build-essential \
                             libffi-dev \
                             libusb-dev \
+                            libbz2-dev \
+                            libdb-dev \ 
+                            libexpat1-dev \ 
+                            libgdbm-dev \ 
+                            liblzma-dev \ 
+                            libmpdec-dev \
+                            libncursesw5-dev \
+                            libreadline-dev \
+                            libsqlite3-dev \
+                            libssl-dev \
+                            zlib1g-dev \
                             gfortran
 
 # Science and Engineering
