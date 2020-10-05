@@ -2,6 +2,9 @@
 # See this web page for details.
 # http://git-scm.com/docs/gitignore
 
+
+*.sublime-*
+
 #############
 ## Windows detritus
 #############
