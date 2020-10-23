@@ -3,8 +3,10 @@
 
 
 ## raspi-config equivalents
+
 sudo apt install avahi-daemon
 
+https://phpraxis.wordpress.com/2016/09/27/enable-sudo-without-password-in-ubuntudebian/
 
 ## OS Image
 
