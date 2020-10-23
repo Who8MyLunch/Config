@@ -1,6 +1,11 @@
 
 # Setup a New device
 
+
+## raspi-config equivalents
+sudo apt install avahi-daemon
+
+
 ## OS Image
 
 Image file: https://www.raspberrypi.org/downloads/raspbian/
