@@ -24,10 +24,10 @@ Install these packages as basic requirements
                             libffi-dev \
                             libusb-dev \
                             libbz2-dev \
-                            libdb-dev \ 
-                            libexpat1-dev \ 
-                            libgdbm-dev \ 
-                            liblzma-dev \ 
+                            libdb-dev \
+                            libexpat1-dev \
+                            libgdbm-dev \
+                            liblzma-dev \
                             libmpdec-dev \
                             libncursesw5-dev \
                             libreadline-dev \
