@@ -72,7 +72,7 @@ make
 # make test
 
 # https://www.linuxjournal.com/content/using-checkinstall-build-packages-source
-# sudo checkinstall  # don't use this.  it goiees against our philosophy.
+# sudo checkinstall  # don't use this.  it goes against our philosophy.
 
 make install
 
