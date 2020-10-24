@@ -6,7 +6,7 @@
 
 Install these packages as basic requirements
 
-    sudo apt-get -y install \
+    sudo apt -y install \
                             keychain \
                             vim \
                             dirmngr \
@@ -38,7 +38,7 @@ Install these packages as basic requirements
 
 # Science and Engineering
 
-    sudo apt-get -y install libfftw3-dev \
+    sudo apt -y install libfftw3-dev \
                             liblapack-dev \
                             libblas-dev \
                             libopenblas-dev \
@@ -46,7 +46,7 @@ Install these packages as basic requirements
 
 ## Image file I/O
 
-    sudo apt-get -y install libjpeg-dev \
+    sudo apt -y install libjpeg-dev \
                             libpng-dev \
                             libtiff-dev \
                             libwebp-dev \
@@ -55,7 +55,7 @@ Install these packages as basic requirements
 
 ## Video file I/O
 
-    sudo apt-get -y install libopencv-dev \
+    sudo apt -y install libopencv-dev \
                             libavcodec-dev \
                             libavformat-dev \
                             libswscale-dev \
