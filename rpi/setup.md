@@ -8,6 +8,11 @@ sudo apt install avahi-daemon
 
 https://phpraxis.wordpress.com/2016/09/27/enable-sudo-without-password-in-ubuntudebian/
 
+change time zone: 
+https://linuxize.com/post/how-to-set-or-change-timezone-on-ubuntu-20-04/
+
+
+
 ## OS Image
 
 Image file: https://www.raspberrypi.org/downloads/raspbian/
