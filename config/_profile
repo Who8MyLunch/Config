@@ -26,7 +26,6 @@ my_prefix=${HOME}/.local
 # https://virtualenvwrapper.readthedocs.io/en/latest/install.html
 export VIRTUALENVWRAPPER_PYTHON=${my_prefix}/bin/python3.8
 export VIRTUALENVWRAPPER_VIRTUALENV=${my_prefix}/bin/virtualenv
-source ${my_prefix}/bin/virtualenvwrapper.sh
 export WORKON_HOME=${HOME}/.virtualenvs
 export PROJECT_HOME=${HOME}/Projects
 
