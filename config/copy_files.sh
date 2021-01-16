@@ -10,9 +10,7 @@ done
 
 #------------------------------------
 # Python stuff
-
-mkdir -p $HOME/wheelhouse   # not sure if this is needed or not???
-
+mkdir -p $HOME/wheelhouse
 
 # https://towardsdatascience.com/how-to-automatically-import-your-favorite-libraries-into-ipython-or-a-jupyter-notebook-9c69d89aa343
 # http://ipython.readthedocs.io/en/stable/config/extensions/autoreload.html
