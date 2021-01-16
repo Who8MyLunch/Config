@@ -2,7 +2,7 @@
 
 #---------------------------------------
 # General stuff in my home folder
-for file in bashrc bash_aliases gitconfig gitignore toprc
+for file in bash_profile profile bashrc gitconfig gitignore toprc
 do
     echo "copy $file"
     eval cp ./_$file $HOME/.$file

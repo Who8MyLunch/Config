@@ -59,3 +59,23 @@ export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${my_prefix}/lib
 
 export UHD_IMAGES_DIR=$HOME/.local/share/uhd/images
 
+
+###################################################################################
+# Python pip environment variables
+# https://pip.pypa.io/en/latest/user_guide/#environment-variables
+export PIP_DEFAULT_TIMEOUT=15
+
+export PIP_FIND_LINKS="/home/${USER}/wheelhouse"   # "http://mirror1.example.com http://mirror2.example.com"
+export PIP_CACHE_DIR="/home/${USER}/wheelhouse/cache"
+export PIP_WHEEL_DIR="/home/${USER}/wheelhouse"
+# export PIP_EXTRA_INDEX_URL="https://www.piwheels.org/simple"    # raspberrypi
+
+export PIP_TRUSTED_HOST="pypi.python.org pypi.org files.pythonhosted.org"
+export PIP_FORMAT="columns"
+export PIP_UPGRADE_STRATEGY="only-if-needed"    # "eager" | "only-if-needed"
+
+# export PIP_PROXY=
+# export PIP_CERT=
+
+# ssh agent stuff
+eval `keychain --eval --quiet --inherit any-once --agents ssh id_rsa`
