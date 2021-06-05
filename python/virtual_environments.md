@@ -1,6 +1,15 @@
 
 # Virtual Python Environments
 
+
+## Philosophy
+- leave system Python for system activities
+- all of my projects use a virtual environment separate from system
+- if I ever need to install using system pip then make sure to use --user flag so that it installs to my folders.  This includes installing virtualenvwrapper.
+
+
+# Notes
+
 https://virtualenvwrapper.readthedocs.org/en/latest/command_ref.html
 
 Install virtualenvwrapper (https://virtualenvwrapper.readthedocs.io/en/latest/install.html) to user space or to user's own custom compiled Python environment.
